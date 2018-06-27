@@ -253,6 +253,13 @@ int main(int argc, char **argv)
   instr = 0;
   while (runcpu())
   {
+    // Allow SID model detection (including $d011 wait) to eventually terminate
+    ++mem[0xd012];
+    if (!mem[0xd012] || ((mem[0xd011] & 0x80) && mem[0xd012] >= 0x38))
+    {
+        mem[0xd011] ^= 0x80;
+        mem[0xd012] = 0x00;
+    }
     instr++;
     if (instr > MAX_INSTR)
     {
