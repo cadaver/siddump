@@ -921,7 +921,7 @@ int runcpu(void)
     break;
 
     case 0x08:
-    PUSH(flags);
+    PUSH(flags | 0x30);
     break;
 
     case 0x68:
@@ -1148,7 +1148,7 @@ int runcpu(void)
     break;
 
     case 0x9a:
-    ASSIGNSETFLAGS(sp, x);
+    sp = x;
     break;
 
     case 0x98:
