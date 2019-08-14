@@ -1003,6 +1003,7 @@ int runcpu(void)
     break;
 
     case 0xe9:
+    case 0xeb:
     SBC(IMMEDIATE());
     pc++;
     break;
