@@ -1,4 +1,4 @@
-SIDDump V1.07
+SIDDump V1.08
 by Lasse Oorni (loorni@gmail.com) and Stein Pedersen
 
 Version history:
@@ -12,8 +12,9 @@ V1.04   - Improved command line handling, added illegal NOP instructions, fixed
 V1.05   - Partial support for multispeed tunes
 V1.06   - Added CPU cycle profiling functionality by Stein Pedersen
 V1.07   - Support rudimentary line counting for SID detection routines
+V1.08   - CPU bugfixes
 
-Copyright (C) 2005-2018 by the authors. All rights reserved.
+Copyright (C) 2005-2020 by the authors. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
