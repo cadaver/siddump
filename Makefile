@@ -4,5 +4,5 @@ CFLAGS+=-O3 -Wall
 CXXFLAGS=$(CFLAGS)
 
 siddump.exe: siddump.o cpu.o
-	gcc -o $@ $^
+	gcc -o $@ $^ -lm
 	strip $@
